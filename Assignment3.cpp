@@ -10,3 +10,12 @@ int sum_list (vector <int> list){
     }
     return sum;
 }
+
+int multiple_list (vector <int> list){          
+    int multi = 1;
+    for (int i = 0; i < list.size(); i++)
+    {
+        multi *= list[i];
+    }
+    return multi;
+}
