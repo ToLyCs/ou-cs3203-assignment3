@@ -20,6 +20,16 @@ int multiple_list (vector <int> list){
     return multi;
 }
 
+vector <int> reverse (vector <int> list){       
+    int n = list.size();
+    for (int i = 0; i < n/2; i++){
+        int temp = list[i];
+        list[i] = list [n -i -1];
+        list [n -i -1] = temp;
+    }
+    return list;
+}
+
 int main(){
     vector <int> list;                  
     int input;
@@ -35,5 +45,11 @@ int main(){
     cout <<"Sum result is: " << sum << "\n";    
     cout << "Multiple result is: " << multi << "\n";    
      
+    vector <int> reversed = reverse(list);      
+    cout << "Reversed list : ";
+    for (int list : reversed){
+        cout << list << " ";
+    }
+   
     return 0;
 }
