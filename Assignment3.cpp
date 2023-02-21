@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-int sum_list (vector <int> list){               
+int sum_list (vector <int> list){               // function to computes sum of a list
     int sum = 0;
     for (int i = 0; i < list.size(); i++ ){
         sum+= list[i];
@@ -11,7 +11,7 @@ int sum_list (vector <int> list){
     return sum;
 }
 
-int multiple_list (vector <int> list){          
+int multiple_list (vector <int> list){          // function to computes multiple of a list
     int multi = 1;
     for (int i = 0; i < list.size(); i++)
     {
@@ -31,9 +31,9 @@ vector <int> reverse (vector <int> list){
 }
 
 int main(){
-    vector <int> list;                  
+    vector <int> list;                  // create the array list of number
     int input;
-    cout << "Please input a list of number (end with a): \n";      
+    cout << "Please input a list of number (end with a): \n";      // loop input list of number until input 'n' to end 
     while (cin >> input && input != 'a')                        
     {
         list.push_back(input);              
