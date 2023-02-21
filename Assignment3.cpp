@@ -45,5 +45,11 @@ int main(){
     cout <<"Sum result is: " << sum << "\n";    
     cout << "Multiple result is: " << multi << "\n";    
      
+    vector <int> reversed = reverse(list);      
+    cout << "Reversed list : ";
+    for (int list : reversed){
+        cout << list << " ";
+    }
+   
     return 0;
 }
