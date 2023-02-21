@@ -19,3 +19,21 @@ int multiple_list (vector <int> list){
     }
     return multi;
 }
+
+int main(){
+    vector <int> list;                  
+    int input;
+    cout << "Please input a list of number (end with a): \n";      
+    while (cin >> input && input != 'a')                        
+    {
+        list.push_back(input);              
+    }
+    
+    int sum = sum_list(list);           
+    int multi = multiple_list(list);
+    
+    cout <<"Sum result is: " << sum << "\n";    
+    cout << "Multiple result is: " << multi << "\n";    
+     
+    return 0;
+}
